@@ -52,7 +52,6 @@ public class AuthorController {
 
     @GetMapping("/getBookNameList")
     public ResponseEntity getBookNameList(@RequestParam("authorId")Integer authorId){
-
         List<String> bookNames = authorService.getBookNames(authorId);
         return new ResponseEntity(bookNames,HttpStatus.OK);
     }

@@ -26,7 +26,7 @@ public class StudentService {
         String body = "Hi "+student.getName()+" !" +
                 "You have successfully registered. You can start issuing the books now.";
 
-        mailMessage.setFrom("pankantiameya@gmail.com");
+        mailMessage.setFrom("springacciojob@gmail.com");
         mailMessage.setTo(student.getEmailId());
         mailMessage.setSubject("Welcome To St Xavier's School's Library !!");
         mailMessage.setText(body);
